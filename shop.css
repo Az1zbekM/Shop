@@ -1,0 +1,23 @@
+.a1{
+    font-size: 28px;
+    /* background-color: black; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header3{
+    padding-left: 15px;
+}
+  
+img.zoom{
+    transition: 1s ease;
+}
+img.zoom:hover{
+    transform: scale(0.9);
+    transition: all 1s ease;
+}
+body{
+   background-image: url(image/shop\ back.jpg);
+}
+
+
+
+ 

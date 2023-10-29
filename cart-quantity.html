@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart quantity</title>
+</head>
+<body>
+    
+    <button onclick="alert(cartQuantity)">show quantity</button>
+    <button onclick="
+    cartQuantity ++;
+    alert(cartQuantity)">Add to Cart</button>
+    <button onclick="
+    cartQuantity = cartQuantity + 2;
+    alert(cartQuantity)">+2</button>
+    <button onclick="
+    cartQuantity = cartQuantity + 3;
+    alert(cartQuantity)">+3</button>
+    <button onclick="
+    cartQuantity = 0; alert('cartQuantity was reset');
+    alert(cartQuantity)">Reset all</button>
+
+
+    <script>
+        let cartQuantity = 0
+    </script>
+
+</body>
+</html>
