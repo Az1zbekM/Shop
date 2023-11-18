@@ -6,8 +6,9 @@
 .header3{
     padding-left: 15px;
 }
-  
+
 img.zoom{
+    cursor: pointer;
     transition: 1s ease;
 }
 img.zoom:hover{
