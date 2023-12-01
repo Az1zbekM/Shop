@@ -75,6 +75,7 @@ body{
 .input-search:hover{
     background-color: rgba(243, 243, 0, 0.393);
     border: 2px solid red;
+    color: black;
 }
 #search-bar-width:focus {
     text-align: center;
@@ -84,3 +85,23 @@ body{
     border: 2px solid red;
     background-color: rgba(243, 243, 0, 0.393);
 }
+input{
+    background-color: rgba(243, 243, 0, 0.393);
+}
+.input-search:focus{
+    background-color: rgba(243, 243, 0, 0.393);
+    border: 2px solid red;
+    color: black;
+}
+#addtocart:hover{
+    transform: scale(1.1);
+    color: greenyellow;
+    background-color:indigo;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+    cursor: pointer;
+}
+   
+
+

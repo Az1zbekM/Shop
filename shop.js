@@ -35,7 +35,7 @@ products.forEach((product) => {
           <h5 class="card-title">${product.name1}</h5>
           <p class="card-text">${product.name}</p>
           <p class="card-text" ><h5 style="color: chartreuse;">$${product.priceCents / 100}</h5></p>
-          <a href="#" class="btn btn-warning" onclick="">Add to cart</a>
+          <a href="#" class="btn btn-warning" id="addtocart" onclick="">Add to cart</a>
         </div>
       </div>
     `
