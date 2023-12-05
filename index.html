@@ -23,13 +23,14 @@
         <header class="d-flex justify-content-lg-center py-4" >
 
           <!-- search bar -->
+          <span class="home-icon" ><i onclick="window.location.href='index.html'" class="fa-solid fa-house"></i></span>
           <input type="search" id="search-bar-width" placeholder="Search" aria-label="Search" class="input-search" required name="q" aria-placeholder="Search" 
           aria-required="true" aria-autocomplete="list" 
           >
             <!---->
 
           <ul class="nav nav-pills">
-            <li class="nav-item px-2"><a href="#" class="nav-link " style="background-color: rgba(243, 243, 0, 0.393); color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" aria-current="page" onclick="alert('Welcome to our website')">Home</a></li>
+            <li class="nav-item px-2"><a href="#" class="nav-link " style="background-color: rgba(243, 243, 0, 0.393); color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" aria-current="page" onclick="window.location.href='index.html'">Home</a></li>
             <li class="nav-item px-2"><a href="#" style="background-color: rgba(243, 243, 0, 0.393); color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="nav-link ">Features</a></li>
             <li class="nav-item px-2"><a href="#" style="background-color: rgba(243, 243, 0, 0.393); color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="nav-link ">Pricing</a></li>
             <li class="nav-item px-2"><a href="#" style="background-color: rgba(243, 243, 0, 0.393); color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" class="nav-link ">Contact</a></li>
@@ -55,7 +56,7 @@
         </header>
       </div>
       <!--  -->
-     <!-- <main class="d-flex justify-content-center align-content-center gap-1 px-5">
+     <!-- < class="d-flex justify-content-center align-content-center gap-1 px-5">
         <div class="raw w-25" class="img-wrapper">
         <div class="col-3"><img class="zoom" src="image/chair.jpg"  alt="" width="330px" height="250px"></div>
         </div>
@@ -70,8 +71,8 @@
 
                 <div class="raw w-25">
                     <div class="col-3"><img class="zoom" src="image/chair.jpg" alt="" width="330px" height="250px"></div>
-                    </div>
-     </main> -->
+                    </div> -->
+     <!--  main-->
 <div class="d-flex justify-content-center gap-5 my-2 js-products-grid">
      <div class="card" style="width: 20rem; background-image: url(image/shopback.jpg);">
         <img class="zoom" src="image/char.jpg" style="height:204px; width:318px;" class="card-img-top" alt="...">
@@ -255,9 +256,21 @@
 
     // Call the function on page load
     window.onload = shuffleCards;
-
 </script>
+<script>
+   window.onscroll = function () { myFunction() };
 
+        let header = document.getElementById("myHeader");
+        let sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+</script>
 
 
 

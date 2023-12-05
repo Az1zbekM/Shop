@@ -38,19 +38,41 @@ body{
     color: rgb(255, 0, 0);
 }
 
+.home-icon{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 690px;
+    right: 1470px;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.5s ease;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.home-icon:hover{
+    transform: scale(1.1);
+
+}
 #carticon:hover{
     transform: scale(1.1);
 }
 
+
 #icon-p{
-    font-size: 20px;
-    color: rgb(255, 0, 0);
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
+    font-weight:bold;
 }
 #head{
     border-bottom: 2.5px ridge red;
@@ -103,5 +125,4 @@ input{
     cursor: pointer;
 }
    
-
 
