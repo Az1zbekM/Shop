@@ -140,13 +140,16 @@ input {
 
 .card{
     width: 350px !important;
-    height: 500px;
-    
+    height: 400px !important; 
 }
 
 .container12{
-    display: flex;
-    
+    display:grid;
+    grid-template-columns: 25rem 25rem 25rem 25rem;
+    grid-template-rows: 420px 420px 420px;
+    width: 100vw;  
+    margin:10px;
+    padding: 0; 
 }
 
 img {

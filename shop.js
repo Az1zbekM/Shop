@@ -1,46 +1,33 @@
-const products = [
-    {
-        name1: 'Chairs',
-        image: 'image/char.jpg',
-        name: 'Black and brown chairs',
-        priceCents: 1090
-    },
-    {
-        name1: 'Basketball',
-        image: 'image/ketbas.jpg',
-        name: 'Pantera Basketball',
-        priceCents: 2090
-    },
-    {
-        name1: 'Girls desire',
-        image: 'image/tshirt.webp',
-        name:'T-Shirts for girls',
-        priceCents: 3090
-    },
-    {
-        name1: 'Shorts for yonug men',
-        image: 'image/shorts.jpg',
-        name:'Summer shorts',
-        priceCents: 4090
-    },
-];
+  // Function to fetch images from Unsplash API
+  async function fetchImages() {
+    try {
+        const response = await fetch('https://api.unsplash.com/photos/random?count=12&client_id=MgTeQACD5mesciqsvNOSVE-GLLbGM5xTU7TV5wQ4Iyk');
+      if (!response.ok) {
+        throw new Error('Failed to fetch images');
+      }
 
-    let productsHTML = '';
+      const data = await response.json();
+      const images = data.map(photo => photo.urls.regular);
+      return images;
+    } catch (error) {
+      console.error('Error fetching images:', error);
+      return [];
+    }
+  }
 
-products.forEach((product) => {
-    productsHTML += `
-    <div class="card" style="width: 20rem; background-image: url(image/shopback.jpg);">
-        <img class="zoom" src="${product.image}" style="height:204px; width:318px;" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${product.name1}</h5>
-          <p class="card-text">${product.name}</p>
-          <p class="card-text" ><h5 style="color: chartreuse;">$${product.priceCents / 100}</h5></p>
-          <a href="#" class="btn btn-warning" id="addtocart" onclick="">Add to cart</a>
-        </div>
-      </div>
-    `
-});
-console.log(productsHTML);
+  // Function to update card images with fetched images
+  async function updateCardImages() {
+    const images = await fetchImages();
+    const cardImages = document.querySelectorAll('.card .zoom');
 
+    cardImages.forEach((image, index) => {
+      if (index < images.length) {
+        image.src = images[index];
+        image.onload = () => console.log(`Image ${index + 1} loaded successfully`);
+        image.onerror = () => console.error(`Error loading image ${index + 1}`);
+      }
+    });
+  }
 
-document.querySelector('.js-products-grid').innerHTML = productsHTML;
+  // Call the function to update card images on page load
+  window.onload = updateCardImages;
