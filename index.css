@@ -124,5 +124,15 @@ input{
     text-align: center; 
     cursor: pointer;
 }
+
+.card{
+    display: flex;
+    
+}
+
+img{
+    height: 250px;
+    width: 100%;
+}
    
 
