@@ -153,8 +153,12 @@ input {
 }
 
 img {
-    height: 250px;
-    width: 100%;
+    width: 350px !important;
+    height: 270px !important;
+}
+
+.card-body p{
+    display: none;
 }
 
 
