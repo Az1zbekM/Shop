@@ -1,26 +1,30 @@
 @import url();
-.a1{
+
+.a1 {
     font-size: 28px;
     /* background-color: black; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.header3{
+
+.header3 {
     padding-left: 15px;
 }
 
-img.zoom{
+img.zoom {
     cursor: pointer;
     transition: 1s ease;
 }
-img.zoom:hover{
+
+img.zoom:hover {
     transform: scale(0.9);
     transition: all 1s ease;
 }
-body{
-   background-image: url(image/shopback.jpg);
+
+body {
+    background-image: url(image/shopback.jpg);
 }
 
-#carticon{
+#carticon {
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -38,7 +42,7 @@ body{
     color: rgb(255, 0, 0);
 }
 
-.home-icon{
+.home-icon {
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -55,29 +59,33 @@ body{
     font-size: 20px;
     color: rgb(0, 0, 0);
 }
-.home-icon:hover{
+
+.home-icon:hover {
     transform: scale(1.1);
 
 }
-#carticon:hover{
+
+#carticon:hover {
     transform: scale(1.1);
 }
 
 
-#icon-p{
+#icon-p {
     font-size: 24px;
     color: rgb(0, 0, 0);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
-    font-weight:bold;
+    font-weight: bold;
 }
-#head{
+
+#head {
     border-bottom: 2.5px ridge red;
 }
-.input-search{
+
+.input-search {
     width: 80px;
     height: 40px;
     border-radius: 10px;
@@ -94,11 +102,13 @@ body{
     border: none;
     transition: all 0.5s ease;
 }
-.input-search:hover{
+
+.input-search:hover {
     background-color: rgba(243, 243, 0, 0.393);
     border: 2px solid red;
     color: black;
 }
+
 #search-bar-width:focus {
     text-align: center;
     outline: none;
@@ -107,32 +117,56 @@ body{
     border: 2px solid red;
     background-color: rgba(243, 243, 0, 0.393);
 }
-input{
+
+input {
     background-color: rgba(243, 243, 0, 0.393);
 }
-.input-search:focus{
+
+.input-search:focus {
     background-color: rgba(243, 243, 0, 0.393);
     border: 2px solid red;
     color: black;
 }
-#addtocart:hover{
+
+#addtocart:hover {
     transform: scale(1.1);
     color: greenyellow;
-    background-color:indigo;
+    background-color: indigo;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center; 
+    text-align: center;
     cursor: pointer;
 }
 
 .card{
+    width: 350px !important;
+    height: 500px;
+    
+}
+
+.container12{
     display: flex;
     
 }
 
-img{
+img {
     height: 250px;
     width: 100%;
 }
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
